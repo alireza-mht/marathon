@@ -96,14 +96,16 @@ public class LoginActivity extends Activity {
     public boolean validate() {
         boolean valid = true;
 
-        if (inputEmail.getText().toString().equals("")) {
+        if (inputEmail.getText().toString().equals("") ||
+                !android.util.Patterns.EMAIL_ADDRESS.matcher(inputEmail.getText().toString()).matches()) {
             inputEmail.setError("enter a valid email address");
             valid = false;
         } else {
             inputEmail.setError(null);
         }
 
-        if (inputPassword.getText().toString().equals("")) {
+        if (inputPassword.getText().toString().equals("") || inputPassword.getText().toString().length() < 4
+                || inputPassword.getText().toString().length() > 10) {
             inputPassword.setError("between 4 and 10 alphanumeric characters");
             valid = false;
         } else {
