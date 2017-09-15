@@ -93,9 +93,7 @@ public class HomeActivity extends AppCompatActivity  implements NavigationView.O
 
         } else if (id == R.id.nav_buy) {
 
-        } else if (id == R.id.nav_connectus) {
-
-        }  else if (id == R.id.nav_transaction) {
+        }   else if (id == R.id.nav_transaction) {
 
         }
 

@@ -58,7 +58,7 @@
         android:layout_marginBottom="8dp">
         <Button
             android:id="@+id/btn_succes_buy"
-            android:layout_width="220dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:textColor="#fff"
             android:background="@color/colorPrimary"
