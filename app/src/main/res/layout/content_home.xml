@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fdfdfe"
     android:orientation="vertical"
+    android:id="@+id/NestedScroll_layout"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.alireza.marathon.Activiity.HomeActivity"
     tools:showIn="@layout/app_bar_home">
@@ -54,87 +55,60 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="16dp"
+                android:gravity="center"
                 android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/btn_charge_home"
                     style="@style/Widget.AppCompat.Button.Colored"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.5"
-                    android:text="شارژ کن"
-                    android:textColor="@android:color/white"
-                    android:textSize="20sp" />
+                    android:layout_width="190dp"
+                    android:layout_height="190dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/charge" />
 
                 <Button
                     android:id="@+id/btn_buy_home"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.5"
-                    android:text="بخر"
-                    android:textColor="@android:color/white"
-                    android:textSize="20sp"
-                    android:theme="@style/AppTheme.DarkBlueButton" />
+                    android:layout_width="190dp"
+                    android:layout_height="190dp"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/buy" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:orientation="horizontal"
-                android:weightSum="3">
+                android:gravity="center"
+                android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/btn_transaction_home"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="8dp"
-                    android:layout_weight="1"
-                    android:text="گردش حساب"
-                    android:textColor="@android:color/white"
-                    android:textSize="16sp"
-                    android:theme="@style/AppTheme.BlueGreyButton" />
-
-                <Button
-                    android:id="@+id/btn_analays_home"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="8dp"
-                    android:layout_weight="1"
-                    android:text="تحلیل"
-                    android:textColor="@android:color/white"
-                    android:textSize="16sp"
-                    android:theme="@style/AppTheme.BlueGreyButton" />
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/transaction" />
 
                 <Button
                     android:id="@+id/btn_addcard_home"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="افزودن کارت"
-                    android:textColor="@android:color/white"
-                    android:textSize="16sp"
-                    android:theme="@style/AppTheme.BlueGreyButton" />
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/add_card" />
+
+                <Button
+                    android:id="@+id/btn_analays_home"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/analays" />
+
             </LinearLayout>
 
-            <Button
-                android:layout_width="70dp"
-                android:layout_height="70dp" />
-
-            <Button
-                android:layout_width="70dp"
-                android:layout_height="70dp" />
-
-            <Button
-                android:layout_width="70dp"
-                android:layout_height="70dp" />
-
-            <Button
-                android:layout_width="70dp"
-                android:layout_height="70dp" />
         </LinearLayout>
 
     </LinearLayout>
-</ScrollView>
+</android.support.v4.widget.NestedScrollView>

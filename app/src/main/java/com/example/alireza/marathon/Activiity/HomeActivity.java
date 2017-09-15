@@ -24,7 +24,7 @@ import com.example.alireza.marathon.R;
 public class HomeActivity extends AppCompatActivity  implements NavigationView.OnNavigationItemSelectedListener {
 
     Button btnBuy;
-
+    Button btnPay;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +39,14 @@ public class HomeActivity extends AppCompatActivity  implements NavigationView.O
             @Override
             public void onClick(View view) {
                 Intent a = new Intent(HomeActivity.this,BuyActivity.class);
+                startActivity(a);
+            }
+        });
+
+        btnPay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent a = new Intent(HomeActivity.this , PayActivity.class);
                 startActivity(a);
             }
         });
@@ -74,6 +82,7 @@ public class HomeActivity extends AppCompatActivity  implements NavigationView.O
 
     public void addObject(){
         btnBuy = (Button) findViewById(R.id.btn_buy_home);
+        btnPay = (Button) findViewById(R.id.btn_charge_home);
     }
 
 

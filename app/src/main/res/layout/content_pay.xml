@@ -7,7 +7,126 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.alireza.marathon.Activiity.PayActivity"
     android:background="#fdfdfe"
-    tools:showIn="@layout/app_bar_pay">
+    android:gravity="center"
+    tools:showIn="@layout/app_bar_pay"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="8dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:text="شارژ حساب"
+        android:layout_weight="0.3"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_marginRight="5dp"
+            android:text="5.000 تومان"
+            android:background="#257f8a"
+            android:textColor="#fff"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="10.000 تومان"
+            android:layout_marginLeft="5dp"
+            android:background="#257f8a"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_marginRight="5dp"
+            android:text="20.000 تومان"
+            android:background="#257f8a"
+            android:textColor="#fff"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="30.000 تومان"
+            android:layout_marginLeft="5dp"
+            android:background="#257f8a"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_marginRight="5dp"
+            android:text="40.000 تومان"
+            android:background="#257f8a"
+            android:textColor="#fff"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="50.000 تومان"
+            android:layout_marginLeft="5dp"
+            android:background="#257f8a"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:gravity="center"
+        >
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="میزان شارژ دلخواه به تومان"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:gravity="center">
+
+        <EditText
+            android:gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:text="خرید"
+            android:textColor="#fff"
+            android:background="@color/colorPrimary"/>
+    </LinearLayout>
+
+
+
+
 
 
 
