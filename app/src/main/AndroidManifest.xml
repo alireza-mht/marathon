@@ -27,6 +27,8 @@
         <activity android:name=".Activiity.LoginActivity"
             android:windowSoftInputMode="stateVisible|adjustPan"
             />
+        <activity android:name=".Activiity.PayActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity android:name=".Activiity.HomeActivity"
             android:theme="@style/AppTheme.NoActionBar" />

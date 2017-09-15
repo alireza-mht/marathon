@@ -60,6 +60,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
+        app:layout_behavior="com.example.alireza.marathon.FABScrollBehavior"
+        app:layout_anchor="@+id/NestedScroll_layout"
+        app:layout_anchorGravity="right|bottom"
         app:srcCompat="@drawable/ic_add_white_24dp" />
 
 </android.support.design.widget.CoordinatorLayout>
