@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_charg"
+            android:icon="@drawable/ic_add_white_24dp"
+            android:title=" شارژ کن" />
+        <item
+            android:id="@+id/nav_buy"
+            android:title="بخر" />
+        <item
+            android:id="@+id/nav_analays"
+            android:title="تحلیل" />
+        <item
+            android:id="@+id/nav_addcard"
+            android:title="اضافه کردن کارت جدید" />
+        <item
+            android:id="@+id/nav_transaction"
+            android:title="گردش حساب" />
+        <item
+            android:id="@+id/nav_aboutus"
+            android:title="درباره ما" />
+        <item
+            android:id="@+id/nav_connectus"
+            android:title="تماس با ما" />
+    </group>
+
+</menu>

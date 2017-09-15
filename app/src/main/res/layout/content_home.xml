@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fdfdfe"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.alireza.marathon.Activiity.HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+
+    <ImageView
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/chart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="24dp"
+            android:text="موجودی: 24700 تومان"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/line_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp" />
+
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_charge_home"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:text="شارژ کن" />
+
+            <Button
+                android:id="@+id/btn_buy_home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="بخر"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:theme="@style/AppTheme.DarkBlueButton" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/btn_transaction_home"
+                android:text="گردش حساب"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="8dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:theme="@style/AppTheme.BlueGreyButton" />
+
+            <Button
+                android:id="@+id/btn_analays_home"
+                android:text="تحلیل"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="8dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:theme="@style/AppTheme.BlueGreyButton" />
+
+            <Button
+                android:id="@+id/btn_addcard_home"
+                android:text="افزودن کارت"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:theme="@style/AppTheme.BlueGreyButton" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
